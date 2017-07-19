@@ -1,3 +1,7 @@
+*::selection {
+  background: rgba(251, 255, 0, 0.58);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -14,16 +18,12 @@ body,
   padding: 2rem;
   margin: 0 auto;
 
-  font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
-  line-height: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 26px;
   color: black;
-  font-size: 18px;
+  font-size: 17px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3 {
-  color: #000;
 }
 
 a {
@@ -46,13 +46,15 @@ section {
   align-items: stretch;
   height: 100%;
 
-  margin: 18px;
+  margin: 17px;
+  padding: 17px;
   border: 1px solid transparent;
 }
 
 section:hover,
 section:active {
   border: 1px solid rgba(0,0,0,.25);
+  border-radius: 2px;
 }
 
 .noto-input {
@@ -61,7 +63,6 @@ section:active {
 }
 
 .noto-textarea {
-  padding: 10px;
   flex: 1;
   width: 100%;
   resize: none;
@@ -72,6 +73,9 @@ section:active {
 .section__title {
   border: 1px solid transparent;
   font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 52px;
+  padding: 0;
 }
 
 .section__title:focus {
@@ -81,6 +85,11 @@ section:active {
 .section__body {
   outline: none;
   border: 1px solid transparent;
+}
+
+/* Inserted on newline in editing mode */
+.section__body div {
+  margin-top: 17px;
 }
 
 .section__body:focus {
