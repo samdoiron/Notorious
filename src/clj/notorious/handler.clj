@@ -24,13 +24,15 @@
     (head)
     [:body {:class "body-container"}
      mount-target
+     (include-js "/pouchdb-6.3.4.min.js")
+     (include-js "/pouchdb.find.js")
      (include-js "/js/app.js")]))
 
 
 (defroutes routes
   (GET "/" [] (loading-page))
   (GET "/about" [] (loading-page))
-  
+
   (resources "/")
   (not-found "Not Found"))
 

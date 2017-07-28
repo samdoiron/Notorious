@@ -8,6 +8,7 @@
                  [ring-server "0.4.0"]
                  [reagent "0.7.0"]
                  [reagent-utils "0.2.1"]
+                 [alandipert/storage-atom "1.2.4"]
                  [ring "1.6.1"]
                  [ring/ring-defaults "0.3.0"]
                  [compojure "1.6.0"]

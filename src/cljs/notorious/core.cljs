@@ -1,5 +1,5 @@
 (ns notorious.core
-    (:require [reagent.core :as reagent :refer [atom]]
+    (:require [reagent.core :as reagent]
               [secretary.core :as secretary :include-macros true]
               [accountant.core :as accountant]
               [notorious.views :as views]))
@@ -7,7 +7,7 @@
 ;; -------------------------
 ;; Routes
 
-(def page (atom #'views/home-page))
+(def page (reagent/atom #'views/home-page))
 
 (defn current-page []
   [:div [@page]])
